@@ -137,7 +137,7 @@ public class VarastoTest {
         double tilavuus = 10;
         double alkuSaldo = 8;
         setUp(tilavuus, alkuSaldo);
-        String varastoString = "saldo = " + alkuSaldo + ", vielä tilaa " + (tilavuus - alkuSaldo);
+        String varastoString = "saldo: " + alkuSaldo + ", vielä tilaa " + (tilavuus - alkuSaldo);
         assertEquals(varasto.toString(), varastoString);
     }
 }
