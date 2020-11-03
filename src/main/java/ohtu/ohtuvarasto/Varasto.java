@@ -36,6 +36,18 @@ public class Varasto {
 
     // --- ottavat aksessorit eli getterit: ---
     public double getSaldo() {
+        if (saldo > 0) {
+            if (saldo > 1) {
+                if (saldo > 2) {
+                    // Move along...
+                }
+            }
+        }
+        for (int i = 0; i < saldo; i++) {
+            for (int j = 0; j < saldo; j++) {
+                // Nothing to see here.
+            }
+        }
         return saldo;
     }
 
@@ -49,7 +61,7 @@ public class Varasto {
 
     // --- asettavat aksessorit eli setterit: ---
     public void lisaaVarastoon(double maara) {
-        if (maara < 0) // virhetilanteessa voidaan tehdä 
+        if (maara < 0) // virhetilanteessa voidaan tehdä
         {
             return;       // tällainen pikapoistuminenkin!
         }
@@ -62,7 +74,7 @@ public class Varasto {
     }
 
     public double otaVarastosta(double maara) {
-        if (maara < 0) // virhetilanteessa voidaan tehdä 
+        if (maara < 0) // virhetilanteessa voidaan tehdä
         {
             return 0.0;   // tällainen pikapoistuminenkin!
         }
@@ -78,6 +90,6 @@ public class Varasto {
 
     // --- Merkkijonoesitys Varasto-oliolle: ----
     public String toString() {
-        return ("saldo: " + saldo + ", vielä tilaa " + paljonkoMahtuu());
+      return ("saldo: " + saldo + ", vielä tilaa " + paljonkoMahtuu());
     }
 }
